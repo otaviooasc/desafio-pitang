@@ -112,9 +112,10 @@ A solução utiliza a seguinte stack tecnológica:
 }
 ```
 ### Erros Possíveis
-1. 401 Unauthorized: Token não enviado ou inválido.
-2. 400 Bad Request: Campos inválidos ou não preenchidos.
-3. 409 Conflict: E-mail ou login já existente.
-
+1. Login inexistente ou senha inválida: Retornar um erro com a mensagem "Invalid login or password".
+2. E-mail já existente: Retornar um erro com a mensagem "Email already exists".
+3. Login já existente: Retornar um erro com a mensagem "Login already exists".
+4. Campos inválidos: Retornar um erro com a mensagem "Invalid fields".
+5. Campos não preenchidos: Retornar um erro com a mensagem "Missing fields".
 
 Essa seção cobre as estórias de usuário, a solução técnica, os passos para construir e executar o projeto, rodar os testes, e o endpoint de autenticação com um exemplo de requisição de login.
